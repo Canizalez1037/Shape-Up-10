@@ -291,3 +291,77 @@ header .logo-link { display: inline; }
     margin-left: 0;
     padding-left: 0;
 }
+
+
+/* Chapter 10: American Captain display font */
+@font-face {
+    font-family: "American Captain";
+    src: url("../fonts/American Captain.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+header h1 {
+    font-family: "American Captain", Impact, sans-serif;
+    font-style: normal;
+    letter-spacing: 0.025em;
+}
+
+/* Chapter 10: figure and wrapped text on Stress Relief page */
+.stress-page .stress-figure {
+    float: left;
+    width: min(42%, 260px);
+    margin: 0 1.2em 0.75em 0;
+}
+.stress-page .stress-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.stress-page .stress-figure figcaption {
+    font-size: 0.85em;
+    line-height: 1.35;
+    text-align: center;
+    padding-top: 0.35em;
+}
+.stress-page .stress-intro {
+    display: flow-root;
+}
+.stress-page .stress-intro > p:first-of-type {
+    margin-top: 0;
+}
+@media screen and (max-width: 480px) {
+    .stress-page .stress-figure {
+        width: min(45%, 200px);
+        margin-right: 0.85em;
+    }
+}
+
+/* Chapter 10: resource links with individual icons */
+.resources ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.resources li {
+    position: relative;
+    min-height: 28px;
+    padding-left: 35px;
+    margin-bottom: 0.65em;
+}
+.resources li::before {
+    content: "";
+    position: absolute;
+    top: 0.1em;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.resources li:nth-child(1)::before { background-image: url("../images/run-icon.png"); }
+.resources li:nth-child(2)::before { background-image: url("../images/stretch-icon.png"); }
+.resources li:nth-child(3)::before { background-image: url("../images/strength-icon.png"); }
+.resources li:nth-child(4)::before { background-image: url("../images/cardio-icon.png"); }
+.resources li:nth-child(5)::before { background-image: url("../images/yoga-icon.png"); }
