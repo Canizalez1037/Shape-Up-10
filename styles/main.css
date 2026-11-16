@@ -299,7 +299,8 @@ header .logo-link { display: inline; }
 /* Chapter 10: American Captain display font */
 @font-face {
     font-family: "American Captain";
-    src: url("../fonts/American Captain.ttf") format("truetype");
+    src: local("American Captain"),
+         url("../fonts/American Captain.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
     font-display: swap;
