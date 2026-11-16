@@ -1,5 +1,8 @@
 /* Shape Up 6-1 - fluid two-column flexbox layout */
 
+/* Open-source display font: works without adding a restricted font file */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 /* Reset */
 * {
     margin: 0;
@@ -302,7 +305,7 @@ header .logo-link { display: inline; }
     font-display: swap;
 }
 header h1 {
-    font-family: "American Captain", Impact, sans-serif;
+    font-family: "American Captain", "Anton", Impact, sans-serif;
     font-style: normal;
     letter-spacing: 0.025em;
 }
