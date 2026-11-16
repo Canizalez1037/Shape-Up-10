@@ -365,3 +365,14 @@ header h1 {
 .resources li:nth-child(3)::before { background-image: url("../images/strength-icon.png"); }
 .resources li:nth-child(4)::before { background-image: url("../images/cardio-icon.png"); }
 .resources li:nth-child(5)::before { background-image: url("../images/yoga-icon.png"); }
+
+/* Chapter 10: stress management tip list */
+.stress-tips-list {
+    margin: 0.35em 0 1.1em 1.5em;
+    padding-left: 0.5em;
+}
+.stress-tips-list li {
+    margin-bottom: 0.45em;
+    line-height: 1.45;
+}
+.stress-tips-list li::marker { color: steelblue; }
